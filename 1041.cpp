@@ -6,15 +6,13 @@ int main(void) {
 	double x, y;
 	cin >> x >> y;
 
-	int i, j;
+	int i = 0, j = 0;
 	
-	if      (x < 0) i = 0;
-	else if (x > 0) i = 2;
-	else            i = 1;
+	if      (x < 0) i = -1;
+	else if (x > 0) i = 1;
 
-	if      (y < 0) j = 0;
-	else if (y > 0) j = 2;
-	else            j = 1;
+	if      (y < 0) j = -1;
+	else if (y > 0) j = 1;
 
 
 	char* cart[3][3] = {
@@ -23,6 +21,6 @@ int main(void) {
 		{"Q4",     "Eixo X", "Q1"    },
 	};
 
-	cout << cart[i][j] << endl;
+	cout << cart[i+1][j+1] << endl;
 	return 0;
 }
