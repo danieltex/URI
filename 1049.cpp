@@ -6,7 +6,7 @@ int main(void)
     using namespace std;
     string a, b, c, animal;
     cin >> a >> b >> c;
-    
+    // TODO: trocar por MAP
     if (a == "vertebrado") {
         if (b == "ave") {
             if (c == "carnivoro") {

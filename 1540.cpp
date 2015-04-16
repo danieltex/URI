@@ -10,11 +10,11 @@ int main(void)
     cin >> casos;    
     for(int i = 0; i < casos; i++)
     {
-        long a1, a2, c1, c2;
+        unsigned a1, a2, c1, c2;
         cin >> a1 >> c1 >> a2 >> c2;
         
-        long crescimento = long( (c2 - c1)* 100  / (a2 - a1));
-        cout << crescimento / 100 << "," << setfill('0') << setw(2) << abs(crescimento) % 100 << endl;
+        unsigned crescimento = unsigned( (c2 - c1)* 100  / (a2 - a1));
+        cout << crescimento / 100 << "," << setfill('0') << setw(2) << crescimento % 100 << endl;
     }
     return 0;
 }
