@@ -4,11 +4,11 @@ using namespace std;
 
 int main() {
     unsigned n;
-    do {
-        cin >> n;
-        for (int i = 1; i <= n; i++)
+    while (cin >> n && n) {
+        unsigned i;
+        for (i = 1; i < n; i++)
             cout << i << ' ';
-        if (n) cout << endl;
-    } while (n);
+        cout << i << endl;
+    }
     return 0;
 }
