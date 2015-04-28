@@ -14,7 +14,7 @@ int main() {
             cin >> matriz[i][j];
     }
     for(int j = 0; j < 5; j++) {
-        for (int i = 1 + j; j < 11 - j; j++)
+        for (int i = 1 + j; i < 11 - j; i++)
             soma += matriz[i][j];
     }
     int elementos = (11 * 12) / 2;
