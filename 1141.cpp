@@ -11,9 +11,9 @@ int main() {
         string anterior, atual;
         for (int i = 0; i < tam; i++) {
             cin >> atual;
-            if (anterior.find(atual) + 1) {
-                seq.insert(anterior);
+            if (atual.find(anterior) != string::npos) {
                 seq.insert(atual);
+                seq.insert(anterior);
             }
             anterior.swap(atual);
         }
